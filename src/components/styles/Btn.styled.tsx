@@ -1,4 +1,5 @@
 import { css, styled } from "styled-components";
+import { myTheme } from "./Theme.styled";
 
 type BtnPropsType = {
   backgroundColor?: string;
@@ -9,9 +10,10 @@ type BtnPropsType = {
 export const Btn = styled.button<BtnPropsType>`
   width: 86px;
   height: 30px;
-  margin-left: 20px;
+  margin-top: ${myTheme.margin.top};
+  margin-left: ${myTheme.margin.left};
   border-radius: 5px;
-  font: 700 10px / 2 "Inter", sans-serif;
+
 
   ${(props) =>
     props.btnType === "primary" &&
