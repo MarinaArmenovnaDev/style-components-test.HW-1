@@ -33,7 +33,6 @@ export const Box = styled.div<BoxPropsType>`
     height: 350px;
     box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
     background: ${(props) => props.color};
-    margin: 0 auto;
 `;
 
 export default App;

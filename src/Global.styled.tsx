@@ -8,11 +8,16 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        
     }
 
     body{
         background-color: ${myTheme.colors.backgroungColor};
         font: 700 10px / 2 "Inter", sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     button {
